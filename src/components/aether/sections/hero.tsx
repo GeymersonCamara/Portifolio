@@ -69,18 +69,6 @@ export function AetherHero() {
                   priority
                 />
               </div>
-
-              <div className="absolute right-8 top-8 rounded-2xl border border-white/10 bg-[#0F1C30]/90 px-4 py-3 backdrop-blur-xl">
-                <p className="text-xs text-slate-400">Modern</p>
-
-                <p className="text-sm font-semibold text-white">Web Experience</p>
-              </div>
-
-              <div className="absolute bottom-8 left-8 rounded-2xl border border-white/10 bg-[#0F1C30]/90 px-4 py-3 backdrop-blur-xl">
-                <p className="text-xs text-slate-400">Performance</p>
-
-                <p className="text-sm font-semibold text-emerald-400">99%</p>
-              </div>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 import { Container } from "@/components/aether/ui/container";
+import { cn } from "@/lib/utils";
 import { SectionTitle } from "@/components/aether/ui/section-title";
 import { featuredProjects } from "@/content/projects";
 
@@ -30,13 +31,18 @@ export function AetherProjects() {
               key={project.id}
               className="overflow-hidden rounded-[2rem] border border-white/5 bg-[#0D1628]"
             >
-              <div className="relative h-[260px] overflow-hidden border-b border-white/5">
+              <div className="relative h-[260px] w-full overflow-hidden border-b border-white/5 bg-[#081524]">
                 <Image
-                  src="/images/project.jpg"
-                  alt=""
+                  src={project.coverSrc ?? "/images/project.jpg"}
+                  alt={`Pré-visualização: ${project.title}`}
                   fill
-                  className="object-cover opacity-80"
                   sizes="(max-width: 1024px) 100vw, 50vw"
+                  className={cn(
+                    "h-full w-full",
+                    project.coverFit === "contain"
+                      ? "object-contain object-center p-6 sm:p-8"
+                      : "object-cover object-center"
+                  )}
                 />
               </div>
 

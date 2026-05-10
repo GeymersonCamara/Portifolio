@@ -8,11 +8,11 @@ export function AetherHeader() {
         <div className="flex h-20 items-center justify-between">
           <a href="#topo" className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-400 font-black text-slate-950">
-              A
+              G
             </div>
 
             <div>
-              <p className="text-sm font-bold text-white">AetherDev</p>
+              <p className="text-sm font-bold text-white">Geymerson Câmara</p>
             </div>
           </a>
 

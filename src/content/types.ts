@@ -26,4 +26,8 @@ export interface ProjectPreview {
   subtitleTags: [string, string];
   description: string;
   highlights: string[];
+  /** Caminho em `public/` (ex.: `/images/logo-completa.png`) */
+  coverSrc?: string;
+  /** `contain` funciona melhor para logos; `cover` para screenshots */
+  coverFit?: "cover" | "contain";
 }
