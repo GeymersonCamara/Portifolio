@@ -23,7 +23,7 @@ export function AetherTech() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-5 sm:grid-cols-4">
+            <div className="grid grid-cols-2 gap-5 sm:grid-cols-3">
               {technologies.map((item) => (
                 <TechCard key={item.name} item={item} />
               ))}

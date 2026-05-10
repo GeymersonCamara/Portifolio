@@ -3,10 +3,8 @@ import { Check } from "lucide-react";
 
 import { Container } from "@/components/aether/ui/container";
 import { EmeraldBadge } from "@/components/aether/ui/emerald-badge";
-import {
-  PrimaryButton,
-  SecondaryLink,
-} from "@/components/aether/ui/marketing-buttons";
+import { PrimaryLink } from "@/components/aether/ui/marketing-buttons";
+import { whatsAppHref, whatsAppPrefill } from "@/lib/whatsapp";
 import { heroHighlights } from "@/content/nav-stats-tech";
 
 export function AetherHero() {
@@ -35,9 +33,13 @@ export function AetherHero() {
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <PrimaryButton>Solicitar Projeto</PrimaryButton>
-
-              <SecondaryLink href="#projetos">Ver Portfólio</SecondaryLink>
+              <PrimaryLink
+                href={whatsAppHref(whatsAppPrefill.solicitarProjeto)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Solicitar Projeto
+              </PrimaryLink>
             </div>
 
             <div className="mt-10 flex flex-wrap items-center gap-6">

@@ -1,6 +1,10 @@
-import type { ReactNode } from "react";
+import type { ComponentPropsWithoutRef, ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
+
+type AnchorRest = Omit<ComponentPropsWithoutRef<"a">, "className"> & {
+  className?: string;
+};
 
 const primaryClassName =
   "group inline-flex items-center justify-center rounded-xl bg-emerald-400 px-6 py-3 text-sm font-semibold text-slate-950 transition-all duration-300 hover:scale-[1.02] hover:bg-emerald-300";
@@ -36,17 +40,17 @@ export function SecondaryButton({
   );
 }
 
-export function SecondaryLink({
-  href,
-  children,
-  className,
-}: {
-  href: string;
-  children: ReactNode;
-  className?: string;
-}) {
+export function PrimaryLink({ href, children, className, ...props }: AnchorRest) {
   return (
-    <a href={href} className={cn(secondaryClassName, className)}>
+    <a href={href} className={cn(primaryClassName, className)} {...props}>
+      {children}
+    </a>
+  );
+}
+
+export function SecondaryLink({ href, children, className, ...props }: AnchorRest) {
+  return (
+    <a href={href} className={cn(secondaryClassName, className)} {...props}>
       {children}
     </a>
   );

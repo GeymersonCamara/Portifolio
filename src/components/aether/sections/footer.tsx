@@ -9,10 +9,10 @@ export function AetherFooter() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-400 font-black text-slate-950">
-                A
+                G
               </div>
 
-              <p className="text-lg font-bold text-white">AetherDigital</p>
+              <p className="text-lg font-bold text-white">Geymerson Câmara</p>
             </div>
 
             <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-400">

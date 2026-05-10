@@ -1,8 +1,6 @@
 import { Container } from "@/components/aether/ui/container";
-import {
-  PrimaryButton,
-  SecondaryButton,
-} from "@/components/aether/ui/marketing-buttons";
+import { PrimaryLink, SecondaryLink } from "@/components/aether/ui/marketing-buttons";
+import { whatsAppHref, whatsAppPrefill } from "@/lib/whatsapp";
 
 export function AetherCta() {
   return (
@@ -23,9 +21,21 @@ export function AetherCta() {
             </p>
 
             <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-              <PrimaryButton>Vamos Conversar</PrimaryButton>
+              <PrimaryLink
+                href={whatsAppHref(whatsAppPrefill.vamosConversar)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Vamos Conversar
+              </PrimaryLink>
 
-              <SecondaryButton>Solicitar Orçamento</SecondaryButton>
+              <SecondaryLink
+                href={whatsAppHref(whatsAppPrefill.solicitarOrcamento)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Solicitar Orçamento
+              </SecondaryLink>
             </div>
           </div>
         </div>

@@ -7,20 +7,18 @@ export const navItems: NavItem[] = [
 ];
 
 export const stats: StatItem[] = [
-  { value: "05+", label: "Anos de experiência" },
-  { value: "120+", label: "Projetos entregues" },
+  { value: "01+", label: "Ano de experiência" },
+  { value: "20+", label: "Projetos entregues" },
   { value: "100%", label: "Foco em performance" },
   { value: "Top", label: "UX/UI Design" },
 ];
 
 export const technologies: TechItem[] = [
   { name: "Python" },
-  { name: "FastAPI" },
   { name: "Next" },
-  { name: "JavaScript" },
-  { name: "PostgreSQL" },
+  { name: "TypeScript" },
+  { name: "MongoDB" },
   { name: "Docker" },
-  { name: "AWS" },
   { name: "REST API" },
 ];
 
