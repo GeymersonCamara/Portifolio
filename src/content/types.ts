@@ -30,4 +30,6 @@ export interface ProjectPreview {
   coverSrc?: string;
   /** `contain` funciona melhor para logos; `cover` para screenshots */
   coverFit?: "cover" | "contain";
+  /** Alinhamento do recorte com `cover` (padrão: center) */
+  coverPosition?: "center" | "top";
 }

@@ -17,10 +17,17 @@ export const featuredProjects: ProjectPreview[] = [
   },
   {
     id: 2,
-    title: "BioNexus: Plataforma Médica",
-    subtitleTags: ["WEB APP", "SAAS"],
+    title: "Konoha Sushi",
+    subtitleTags: ["DELIVERY", "E-COMMERCE"],
     description:
-      "Sistema moderno com dashboards, integrações e experiência premium para usuários e administradores.",
-    highlights: ["+ UX de alta conversão", "+ Sistema escalável", "+ API robusta"],
+      "Sistema de delivery para o Konoha Sushi: cardápio online, pedidos e experiência fluida para clientes e gestão do restaurante.",
+    highlights: [
+      "+ Pedidos online",
+      "+ Interface focada em conversão",
+      "+ Fluxo de delivery otimizado",
+    ],
+    coverSrc: "/images/konoha-sushi.png",
+    coverFit: "cover",
+    coverPosition: "top",
   },
 ];

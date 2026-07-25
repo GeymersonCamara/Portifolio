@@ -41,7 +41,12 @@ export function AetherProjects() {
                     "h-full w-full",
                     project.coverFit === "contain"
                       ? "object-contain object-center p-6 sm:p-8"
-                      : "object-cover object-center"
+                      : cn(
+                          "object-cover",
+                          project.coverPosition === "top"
+                            ? "object-top"
+                            : "object-center"
+                        )
                   )}
                 />
               </div>
